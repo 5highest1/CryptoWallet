@@ -32,7 +32,7 @@ final class LoginViewController: UIViewController, LoginView, UITextFieldDelegat
     }
     
     private func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .white1
         
         setupTextField(loginTextField, placeholder: "Username", iconName: "user")
         setupTextField(passwordTextField, placeholder: "Password", iconName: "passwordiconss")
@@ -78,7 +78,7 @@ final class LoginViewController: UIViewController, LoginView, UITextFieldDelegat
     
     private func setupTextField(_ textField: UITextField, placeholder: String, iconName: String) {
         textField.delegate = self
-        textField.backgroundColor = .clear
+        textField.backgroundColor = .white
         textField.layer.cornerRadius = 25
         textField.textAlignment = .left
         textField.placeholder = placeholder

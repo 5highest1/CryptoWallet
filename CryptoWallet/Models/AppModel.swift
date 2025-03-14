@@ -14,15 +14,15 @@ struct Cryptocurrency: Codable {
     static func icon(for symbol: String) -> String {
         let iconMapping = [
             "BTC": "bitcoin",
-            "ETH": "bitcoin",
-            "TRX": "bitcoin",
-            "LUNA": "bitcoin",
-            "DOT": "bitcoin",
-            "DOGE": "bitcoin",
-            "USDT": "bitcoin",
-            "XLM": "bitcoin",
-            "ADA": "bitcoin",
-            "XRP": "bitcoin"
+            "ETH": "RubleIcon",
+            "TRX": "RubleIcon",
+            "LUNA": "RubleIcon",
+            "DOT": "RubleIcon",
+            "DOGE": "RubleIcon",
+            "USDT": "RubleIcon",
+            "XLM": "RubleIcon",
+            "ADA": "RubleIcon",
+            "XRP": "RubleIcon"
         ]
         return iconMapping[symbol, default: "default_icon"]
     }

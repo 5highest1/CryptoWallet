@@ -34,7 +34,7 @@ final class NetworkService {
                 do {
                     let response = try JSONDecoder().decode(NetworkResponse.self, from: data)
                     let assetData = response.data
-
+ 
                     let crypto = Cryptocurrency(
                         name: assetData.name.uppercased(),
                         symbol: symbol,
